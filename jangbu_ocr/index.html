@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>장부OCR 개인정보처리방침</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f3eee4;
+      color: #1a2332;
+      font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.75;
+    }
+    header {
+      background: #0e6b52;
+      color: #fff;
+      padding: 32px 20px;
+    }
+    header div, main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    main { padding: 24px 20px 80px; }
+    h1 { font-size: 28px; margin: 0; }
+    h2 { color: #0e6b52; font-size: 18px; margin-top: 28px; }
+    p, li { color: #2f3a48; }
+    .meta { color: #6b645b; font-size: 14px; }
+    a { color: #0a4a39; }
+  </style>
+</head>
+<body>
+  <header><div><h1>장부OCR 개인정보처리방침</h1></div></header>
+  <main>
+    <p class="meta">
+      앱 이름: 장부OCR<br />
+      애플리케이션 ID: kr.jangbu.jangbu_ocr<br />
+      개인정보처리자(대표자): 김주동<br />
+      개인정보 보호책임자: 김주동<br />
+      운영자 영문 표기: judong,kim<br />
+      시행일: 2026-10-06<br />
+      문의: <a href="mailto:xwebmon@gmail.com">xwebmon@gmail.com</a>
+    </p>
+    <p>
+      본 방침은 Google Play에 배포되는 앱 「장부OCR」(이하 “앱”)에 적용됩니다.
+      앱은 영수증 사진을 기기의 글자 인식(OCR)으로 읽고, 이용자가 연결한 AI로 수입·지출 항목을 정리하는 장부입니다.
+      회원가입 없이 동작하며, 개발자는 이용자 데이터를 받는 별도 서버를 운영하지 않습니다.
+    </p>
+
+    <h2>1. 처리하는 정보</h2>
+    <ul>
+      <li>카메라 또는 앨범에서 선택한 영수증 사진: 글자 인식에만 쓰며, 앱 장부에는 사진 대신 인식한 글자와 이용자가 저장한 항목을 남깁니다.</li>
+      <li>장부 항목: 날짜, 상호, 금액, 부가세, 분류, 메모. 기기 앱 저장공간에만 둡니다.</li>
+      <li>AI API 키: 기기 보안 저장공간에 둡니다. 개발자 서버로 보내지 않습니다.</li>
+      <li>앱 추천: 이용자가 SNS 공유를 누르면 앱 소개와 스토어 주소만 선택한 앱으로 갑니다. 장부 금액과 영수증은 포함하지 않습니다.</li>
+    </ul>
+
+    <h2>2. 기기 안에서의 처리</h2>
+    <p>
+      글자 인식은 기기에서 Google ML Kit로 처리합니다.
+      한국어 인식 모델을 처음 쓸 때 Google Play 서비스를 통해 모델이 내려받을 수 있습니다.
+    </p>
+
+    <h2>3. AI로 전송되는 정보</h2>
+    <p>
+      설정에서 AI를 연결하고 정리 기능을 쓰면, 영수증 사진이 아니라 인식된 글자만 이용자가 고른 AI 사업자에게 전송됩니다.
+      예를 들어 Google Gemini, OpenAI, Anthropic, 이용자가 입력한 OpenAI 호환 주소입니다.
+      그 전송과 보관은 해당 사업자의 정책과 이용자 계정의 설정을 따릅니다.
+      AI를 연결하지 않으면 글자는 기기 밖으로 나가지 않고, 앱 안의 기본 정리만 사용합니다.
+    </p>
+
+    <h2>4. 광고</h2>
+    <p>
+      구독하지 않으면 화면 아래 배너와, 새 기록을 저장한 뒤 가끔 전면 광고가 나옵니다.
+      Google AdMob이 광고 제공을 위해 광고 ID, 기기 정보, IP 주소를 처리할 수 있으며, 이에는
+      <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.
+      장부 금액과 영수증 글자는 광고 요청에 넣지 않습니다.
+      구독 중에는 광고를 요청하지 않습니다.
+      필요한 지역에서는 광고 동의 창이 먼저 나올 수 있습니다.
+    </p>
+
+    <h2>5. 구독</h2>
+    <p>
+      결제는 Google Play가 처리하며, 앱과 개발자는 카드 번호 등 결제 정보를 받지 않습니다.
+      설치 후 30일 동안 영수증 OCR을 체험할 수 있고, 그 뒤에는 OCR만 구독에서 열립니다.
+      장부 보기, 직접 입력, AI 정리, CSV, 리포트는 체험이 끝나도 사용할 수 있습니다.
+      구독하면 OCR과 모든 기능을 쓸 수 있고 광고가 나오지 않습니다.
+      체험 중에도 광고는 나옵니다.
+      해지하지 않으면 구독은 자동으로 갱신됩니다.
+    </p>
+
+    <h2>6. 권한</h2>
+    <ul>
+      <li>카메라: 영수증을 찍을 때만 사용합니다.</li>
+      <li>인터넷: 광고, 구독 확인, AI 호출, 필요 시 한국어 인식 모델 수신에 사용합니다.</li>
+      <li>사진: 앨범에서 영수증을 고를 때 시스템 선택 창을 사용합니다.</li>
+    </ul>
+
+    <h2>7. 보관과 삭제</h2>
+    <p>
+      장부와 AI 설정은 앱을 지우면 함께 삭제됩니다.
+      앱 설정의 “장부 전체 삭제”로 기록만 지울 수 있습니다.
+      CSV 보내기로 이용자가 직접 사본을 만들 수 있습니다.
+      앱 데이터는 Android 자동 백업 대상에서 제외합니다.
+    </p>
+
+    <h2>8. 이용 대상</h2>
+    <p>
+      이 앱은 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 수집하지 않습니다.
+      세무 신고 프로그램이 아니며, 저장된 금액은 신고·회계 감사 자료로 쓰지 않는 것이 좋습니다.
+      저장 전에 금액을 확인해 주세요.
+    </p>
+
+    <h2>9. 개인정보 보호책임자</h2>
+    <ul>
+      <li>개인정보처리자(대표자): 김주동</li>
+      <li>개인정보 보호책임자: 김주동</li>
+      <li>운영자 영문 표기: judong,kim</li>
+      <li>이메일: <a href="mailto:xwebmon@gmail.com">xwebmon@gmail.com</a></li>
+    </ul>
+
+    <h2>10. 방침 변경</h2>
+    <p>
+      방침이 변경되면 이 페이지와 앱 내 고지를 통해 알립니다.
+      이 페이지 주소는
+      <a href="https://anyethernet.github.io/jangbu_ocr/">https://anyethernet.github.io/jangbu_ocr/</a>
+      입니다.
+    </p>
+  </main>
+</body>
+</html>
